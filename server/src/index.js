@@ -8,9 +8,9 @@ let data = { rooms: [] };
 io.use(require("./socket.js")(data, io));
 app.use("/api", require("./api")(data, io));
 
-app.use(static(join(__dirname, "..", "..", "client", "dist")));
+app.use(static(join(__dirname, "..", "..", "client", "build")));
 app.get("*", (_, res) => {
-  res.sendFile(join(__dirname, "..", "..", "client", "dist", "index.html"));
+  res.sendFile(join(__dirname, "..", "..", "client", "build", "index.html"));
 });
 
 const port = process.env.PORT || 5000;

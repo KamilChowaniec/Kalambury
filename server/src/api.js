@@ -5,5 +5,9 @@ module.exports = (data, io) => {
     res.send(Object.values(data.rooms).map((v) => v.info()));
   });
 
+  api.post("createRoom", (req, res) => {
+    
+  });
+
   return api;
 };

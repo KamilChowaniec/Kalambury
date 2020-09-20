@@ -5,8 +5,8 @@
   "scripts": {
     "client": "npm start --prefix client",
     "server": "npm start --prefix server",
-    "dev": "npm start --prefix client & npm start --prefix server",
-    "prod": "npm run build --prefix client && PORT=3000 npm start --prefix server",
+    "dev": "npm start --prefix server & npm start --prefix client ",
+    "prod": "npm run build --prefix client && PORT=3000 npm run prod --prefix server",
     "postinstall": "npm install --prefix client && npm install --prefix server"
   },
   "author": "",

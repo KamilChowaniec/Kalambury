@@ -1,0 +1,12 @@
+.room {
+  flex-direction: column;
+  justify-content: center;
+  height: 65vh;
+}
+
+.game {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

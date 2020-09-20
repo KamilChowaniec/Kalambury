@@ -1,0 +1,122 @@
+.chat {
+  width: 20%;
+  height: 100%;
+  margin: 5px 0px;
+  box-shadow: 0px 0px 5px 1px;
+  display: flex;
+  flex-direction: column;
+}
+
+.messageBox {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background: white;
+  border-bottom: 1px solid rgb(212, 212, 212);
+}
+
+.messageBox::-webkit-scrollbar {
+  width: 5px;
+}
+
+.messageBox::-webkit-scrollbar-track {
+  background: #ddd;
+}
+
+.messageBox::-webkit-scrollbar-thumb {
+  background: #666;
+}
+
+.chatEntry {
+  width: fit-content;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.555);
+  margin: 5px 8px;
+  padding: 0px 3px;
+  padding-bottom: 7px;
+  background: rgb(211, 250, 255);
+}
+
+.chatEntry.close {
+  background: rgb(255, 255, 0);
+}
+
+.chatEntry.guessed {
+  background: rgb(0, 212, 0);
+}
+
+.user {
+  font-size: 0.7rem;
+  margin: 0;
+  padding: 1px 2px;
+  margin-left: 5px;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+}
+
+.user:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.281);
+  border-top: none;
+  background: white;
+  z-index: -1;
+}
+
+.msg {
+  width: 100%;
+  font-size: 0.85rem;
+  margin: 0;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.inputBox {
+  display: flex;
+  background: white;
+}
+
+.input {
+  outline: none;
+  border: none;
+  width: 100%;
+  margin: 2px 0px;
+}
+
+.sendBtn {
+  box-sizing: content-box;
+  width: auto;
+  height: auto;
+  margin: 0;
+  border: none;
+  outline: none;
+  padding: 5px;
+  cursor: pointer;
+  background:white;
+}
+
+.sendBtn .img {
+  height: 24px;
+  display: block;
+  object-fit: contain;
+  filter: invert(58%) sepia(59%) saturate(4807%) hue-rotate(168deg)
+    brightness(107%) contrast(105%);
+}
+
+.sendBtn .img:hover {
+  filter: invert(58%) sepia(59%) saturate(4807%) hue-rotate(168deg)
+    brightness(107%) contrast(105%) hue-rotate(10deg);
+}
+
+.sendBtn .img:active {
+  filter: invert(58%) sepia(59%) saturate(4807%) hue-rotate(168deg)
+    brightness(107%) contrast(105%) hue-rotate(30deg);
+}

@@ -1,0 +1,11 @@
+.header {
+  width: 100%;
+  background: rgb(105, 183, 207);
+  font-size: 2rem;
+  box-shadow: 1px 1px 6px 1px;
+  margin:10px 0px;
+}
+
+.logo {
+  margin: 5px;
+}

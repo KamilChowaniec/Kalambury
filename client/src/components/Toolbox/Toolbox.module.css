@@ -1,0 +1,51 @@
+.toolbox {
+  box-sizing: content-box;
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.tool {
+  padding: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  height: 2rem;
+  width: 2rem;
+  background: rgb(190, 190, 190);
+  cursor: pointer;
+  float: left;
+  border: 1px solid black;
+  border-radius: 30%;
+  box-shadow: 1px 1px 2px 1px;
+  transition: box-shadow 200ms, background 500ms;
+}
+
+.tool:hover {
+  transition: box-shadow 200ms;
+  box-shadow: 1px 1px 2px 1px, inset 0 0 10px;
+}
+
+.tool.chosen {
+  transition: background 500ms;
+  background: rgb(0, 165, 165);
+}
+
+.tool.chosen:hover {
+  transition: box-shadow 200ms;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+  transition: 500ms;
+}
+
+.chosen .img {
+  transition: 500ms;
+  filter: invert(100%);
+}

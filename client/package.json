@@ -1,29 +1,40 @@
 {
-  "name": "client",
+  "name": "kalambury",
   "version": "0.1.0",
-  "description": "",
-  "scripts": {
-    "start": "parcel index.html -p 3000",
-    "build": "parcel build index.html"
-  },
-  "license": "MIT",
+  "private": true,
   "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "fabric": "^2.7.0",
+    "history": "^5.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
-    "socket.io-client": "^2.3.0"
+    "react-scripts": "3.4.3",
+    "socket.io-client": "^2.3.0",
+    "use-socket.io-client": "^1.1.0"
   },
-  "devDependencies": {
-    "babel-preset-nano-react-app": "^0.1.0",
-    "parcel": "^2.0.0-alpha.3.2"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "babel": {
-    "presets": [
-      "nano-react-app"
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
     ]
   },
-  "alias": {
-    "components": "./src/components"
-  },
-  "proxy": "http://localhost:3000"
+  "proxy": "http://localhost:5000"
 }
